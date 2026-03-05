@@ -6,9 +6,9 @@
 	
 	By pasaqeh(Simon) -- roblox name / @pasaqeh -- discord name
 
-	! Script exactly has: 729 lines of code excluding empty lines and comments.
+	! Script exactly has: 726 lines of code excluding empty lines and comments.
 
-	! Used in pair with loader with init() and start() functions and requires 3 folders, for Remote events, for pooled ghost models
+	! Used in pair with loader with init() and start() functions and requires 2 folders, for pooled ghost models
 	and workspace folder for spawned ghosts.
 
 
@@ -48,7 +48,7 @@
 	Can be called to create a ghost for a player from a GhostBase snapshot.
 
 	- Module.CreatePlayerGhost(player, ghostProperties, ghostMessages)  --> Ghost?
-	Can be called to create
+	Can be called to create a ghost base from recording.
 
 	- Module.RemovePlayerGhost(player, ghostId) --> boolean
 	Can be called to remove a specific ghost for a player.
@@ -971,5 +971,6 @@ function GhostReplay.RemovePlayerGhost(player: Player?, ghostId: number?): boole
 	end
 	return removePlayerGhost(player, ghostId :: number)
 end
+
 
 return GhostReplay
