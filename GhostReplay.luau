@@ -110,7 +110,7 @@ type ActiveReplayTask = {
 
 	NextGuiUpdateTime: number,
 
-	-- NEW (chat replay)
+	-- // Chat replay
 	Messages: { GhostMessage },
 	NextMessageIndex: number,
 }
@@ -974,3 +974,4 @@ end
 
 
 return GhostReplay
+
